@@ -1,2 +1,4 @@
-# Web
-HTML CSS
+# Web Design
+HTML 
+CSS
+JavaScript
