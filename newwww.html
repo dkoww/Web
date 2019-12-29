@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+
+<script type="text/javascript">
+window.onload=function(){
+    var head=document.getElementById("head");
+    head.addEventListener("mouseover", function(){
+        this.style.opacity=1;
+        this.style.backgroundColor="red";
+    });
+    head.addEventListener("mouseout", function(){
+        this.style.opacity=0.6;
+        this.style.backgroundColor="#612E7D";
+    });
+};
+</script>
+<style type="text/css">
+
+.head{
+    background-color:#3C0180; color:white; font-weight:bold; font-size:30px;
+    text-align:center; padding:10px;
+    transition:opacity 3s, background-color 1s;
+}
+</style>
+
+<script>
+function test(){
+    alert("Welcome");
+}
+test();
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <link href="../css/style.css" rel="stylesheet">
+    <title>Profile</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <style type="text/css">
+
+    .title{font-weight:bold;font-size:40px}
+    .title2{font-weight:bold}
+    .content{width:80px; padding:10px; border:2px solid blue;margin-top:15px;margin-bottom:20px}
+    .content{color:blue}
+    .con{color:blue}
+    .box2{
+        width:230px;padding:10px;margin:15px;background-color:white;
+        display:inline-block;vertical-align:top;
+        text-align:center;height:40px;line-height:30px;
+        }
+    .table{width:1000px;margin-left:auto;margin-right:auto;}
+
+    .cube{
+    position:absolute; right:0px; top:0px;
+    }
+    .cube>.top{
+        width:70px;height:30px;background-color:#C7CCFF;
+        transform:skew(-45deg, 0deg) translate(15px, 0px)
+    }
+    .cube>.center{
+        width:70px;height:70px;background-color:#7A85FF;
+        display:inline-block;
+    }
+    .cube>.right{
+        width:30px;height:70px;background-color:#000A7F;
+        display:inline-block;
+        transform:skew(0deg, -45deg) translate(0, -15px)
+    }
+    @ media screen and (max-width:600px){
+        .table{width:100%;
+    }
+    </style>
+
+
+</head>
+<body style="margin:0px;background-color:#eeeeee;">
+<hr>
+
+    <div class="head" id="head"> News </div>
+    <div class="container" style="margin-top:70px;">
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <p align="center"> <img src="77.jpg" width="50%"/> </p>
+              <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+              <p align="center"> <img src="11.jpg" width="50%"/> </p>
+              <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+              <p align="center"> <img src="09.jpg" width="76%"/> </p>
+              <div class="carousel-caption"></div>
+            </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.carousel').carousel({
+              interval: 1500
+            });
+        });
+    </script>
+
+    <div class="table"> </div>
+        <div class="box2">
+            <div class="title2" align="center">Story</div>
+        </div>
+        <div class="box2">
+            <div class="title2" align="center">About </div>
+        </div>
+        <div class="box2">
+            <div class="title2" align="center">contact</div>
+        </div>
+       <div class="box2">
+            <div class="title2" align="center">Topic</div>
+        </div>
+    <div class="cube">
+        <div class="top"></div>
+        <div class="center"></div><div class="right"></div>
+        </div>
+    </div>
+
+    <div class="title">  <pre> <b> Instruction </b> </pre></div>
+    <div class="content"><b> Catalog </b></div>
+    <div>・S<span style="position:relative;top:-8px">s</span>Storm Blue</div>
+    <div>・A fragment</div>
+    <div>・Nature</div>
+    <div><span class="con">There are different motif on the website.</span></div>
+<hr>
+
+    <div id="article">
+        <p>color information: {{details}}</p>
+        <button v-on:click="btnClick('Oily, not easy to dry.')">Oil colors</button>
+        <button v-on:click="btnClick('Water-based, Translucent soft.')">Watercolor</button>
+        <button v-on:click="btnClick('It becomes waterproof.')">Acrylic</button>
+    </div>
+    <script>
+        var article = new Vue({
+            el: '#article',
+            data: {
+                details: 'ink'
+            },
+            methods: {
+                btnClick: function(x){
+                    this.details = x;
+                },
+            },
+        });
+    </script>
+
+</body>
+
+<hr>
+    <h2 align="center" valign="center"><b>Landscape</b></h2>
+    <table align="center" valign="center" border="10" width="600" cellpadding="6">
+        <p align="center"> <img src="99.jpg"/> </p>
+        <tr>
+            <td align="center"> Name: </td>
+            <td> Title: </td>
+        </tr>
+        <tr>
+            <td> Storm Blue </td>
+            <td><u>Guess what’s the weather in the picture, chilly ? warm ? storm ? other ?
+                - 15.0x15.0cm </u></td>
+        </tr>
+    </table>
+<hr/>
+    <h2 align="center" valign="center"><b>Abstract</b></h2>
+    <table align="center" valign="center" border="10" width="600" cellpadding="5">
+        <p align="center"> <img src="88.jpg"/> </p>
+        <tr>
+            <td align="center"> Name: </td>
+            <td> Title: </td>
+        </tr>
+        <tr>
+            <td> A fragment </td>
+            <td><u>Stitching every clip in life. - 20.0x29.0cm</u></td>
+        </tr>
+    </table>
+<hr>
+    <h2 align="center" valign="center"><b>Nature</b></h2>
+    <table align="center" valign="center" border="10" width="600" cellpadding="5">
+        <p align="center"> <img src="66.jpg"/> </p>
+        <tr>
+            <td align="center"> Name: </td>
+            <td> Title: </td>
+        </tr>
+        <tr>
+            <td> Forward </td>
+            <td><u>The power of nature. - 53x45.5cm</u></td>
+        </tr>
+    </table>
+</hr>
+<hr>
+        <h2 align="center" valign="center"><b>Tree</b></h2>
+    <table align="center" valign="center" border="10" width="600" cellpadding="5">
+        <p align="center"> <img src="55.jpg"/> </p>
+        <tr>
+            <td align="center"> Name: </td>
+            <td> Title: </td>
+        </tr>
+        <tr>
+            <td> Flow </td>
+            <td><u>sequence of time. - 20.0x29.0cm</u></td>
+        </tr>
+    </table>
+</hr>
+<hr>
+        <h2 align="center" valign="center"><b>Sketch</b></h2>
+    <table align="center" valign="center" border="10" width="600" cellpadding="5">
+        <p align="center"> <img src="22.jpg"/> </p>
+        <tr>
+            <td align="center"> Name: </td>
+            <td> Title: </td>
+        </tr>
+        <tr>
+            <td> Peaceful </td>
+            <td><u>She is in a quite and peaceful atmosphere. - 41.0x43.0cm</u></td>
+        </tr>
+    </table>
+</hr>
+<hr>
+        <h2 align="center" valign="center"><b>change</b></h2>
+    <table align="center" valign="center" border="10" width="600" cellpadding="5">
+        <p align="center"> <img src="33.jpg"/> </p>
+        <tr>
+            <td align="center"> Name: </td>
+            <td> Title: </td>
+        </tr>
+        <tr>
+            <td>  Sequence of time </td>
+            <td><u> unlimited, freedom, between moving and stopping. - 80.0x65.0cm</u></td>
+        </tr>
+    </table>
+</hr>
+    <hr>
+    <h2>Web Search</h2>
+    <ul>
+        <li><a href="http://www.google.com/">Google</a></li>
+    </ul>
+    <ul>
+        <li><a href="http://www.yahoo.com/">Yahoo</a></li>
+    </ul>
+
+
+</hr>
+</body>
+</html>
