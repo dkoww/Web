@@ -2,7 +2,7 @@
 HTML 
 CSS
 JavaScript
-vue.js
+Vue.js
 RWD響應式
 
 
